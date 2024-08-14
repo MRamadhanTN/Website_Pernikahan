@@ -7,7 +7,7 @@
 body {
   font-size: 1.2rem;
   font-family: "Work Sans", sans-serif;
-  min-height: 2000px;
+  min-height: 4000px;
 }
 
 .hero::before {
@@ -19,6 +19,7 @@ body {
   height: 100%;
   background-image: url(img/img1.jpg);
   background-size: cover;
+  background-position: center;
   z-index: -1;
   filter: grayscale();
 }
@@ -58,6 +59,20 @@ body {
   color: white;
 }
 
+.mynavbar {
+
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+    text-transform: uppercase;
+}
+
 /* Media Query */
 /* laptop */
 @media (max-width: 992px) {
@@ -78,6 +93,10 @@ body {
   .simply-countdown > .simply-section {
     padding: 70px;
     margin: 5px;
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 
